@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ems">
+<head>
+<title>Employee Management System</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes" />
+<link rel="stylesheet" href="component/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="component/common/css/common.css">
+<link rel="shortcut icon" href="component/images/student.png" />
+</head>
+<body>
+	<!-- Header Starts -->
+	<nav class="navbar navbar-default navbar-fixed-top header">
+		<div class="container">
+			<div class="navbar-header"></div>
+		</div>
+	</nav>
+	<!-- Header End -->
+	
+	<div ng-controller="mainController" style="margin-top: 60px;">
+		<div ng-view></div>
+	</div>
+
+	<!-- Footer Start -->
+	<nav class="navbar-bottom navbar-default navbar-fixed-bottom footer">
+		<div class="container"></div>
+	</nav>
+	<!-- Footer End -->
+	
+	<script type="text/javascript" src=component/jquery/jquery-2.x-git.js></script>
+	<script type="text/javascript" src="component/bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript" src="component/angular/angular.min.js"></script>
+	<script type="text/javascript" src="component/angular/angular-route.min.js"></script>
+	<script type="text/javascript" src="component/app/app.js"></script>
+	<script type="text/javascript" src="component/common/js/common.js"></script>
+
+</body>
+</html>

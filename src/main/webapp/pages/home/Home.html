@@ -1,0 +1,38 @@
+<link rel="stylesheet"
+	href="../../component/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="../../component/common/css/common.css">
+<style>
+body {
+	background: url("component/images/home-background.jpg") no-repeat center
+		center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+</style>
+<div class="container">
+<table border="1">
+	<tr>
+		<th>Employee ID</th>
+		<th>First Name</th>
+		<th>Middle Name</th>
+		<th>Last Name</th>
+		<th>Password</th>
+		<th>Confirm Password</th>
+		<th>Email ID</th>
+	</tr>
+	<tr ng-repeat="emp in employeeInformation">
+		<td>{{emp.employeeId}}</td>
+		<td>{{emp.firstName}}</td>
+		<td>{{emp.middleName}}</td>
+		<td>{{emp.lastName}}</td>
+		<td>{{emp.password}}</td>
+		<td>{{emp.confirmPassword}}</td>
+		<td>{{emp.emailId}}</td>
+	</tr>
+</table>
+
+<button ng-click="getDataFromServer()">Employee</button>
+
+</div>
